@@ -3,16 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="main.js"></script>
+
     <title>Vite App</title>
   </head>
   <body>
-    <div id="tabulka" style="width: 800px;"><canvas id="main"></canvas></div>
-    <script type="module" src="main.js"></script>
-    <label for="input">Napiš text</label>
-    <input type="text" id="input">
-    <label for="count">Napiš počet bodů</label>
-    <input type="number" id="count">
-    <button id="button">Press to submit</button>
+
+<div class="areaChart">
+
+  <div id="areaTab" style="width: 500px"><canvas id="aTab"></canvas></div>
+  <h2>formulář na přidání bodů:</h2>
+  <label for="areaCount">Napiš počet bodů</label>
+  <input type="number" id="areaCount">
+  <label for="areaSelect">Vyber</label>
+  <select name="chars" id="areaSelect"></select>
+</div>
+<input type="submit" id="areaSubmit">
+<br>
+<br>
+<h2>formulář na přidání nových dat:</h2>
+
+  <label for="areaAddName">Napiš jméno</label>
+  <input type="text" id="areaAddName">
+  <label for="areaAddNum">Napiš body</label>
+  <input type="number" id="areaAddNum">
+  <input type="submit" id="areaAddSubmit">
+
+
   </body>
 </html>
